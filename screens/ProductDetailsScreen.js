@@ -1,7 +1,8 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text } from 'react-native';
+import styles from '../styles'
 
-export function ProductDetailsScreen({ route }) {
+const ProductDetailsScreen = ({ route }) => {
   const { productId } = route.params;
 
   return (
@@ -14,3 +15,5 @@ export function ProductDetailsScreen({ route }) {
     </View>
   );
 }
+
+export default ProductDetailsScreen;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet, FlatList, TouchableOpacity } from 'react-native';
-
+import styles from '../styles'
 
 const products = [
   { id: '1', name: 'Prodotto 1', price: '€19.99' },
@@ -8,7 +8,7 @@ const products = [
   { id: '3', name: 'Prodotto 3', price: '€39.99' },
 ];
 
-function HomeScreen({ navigation }) {
+export function HomeScreen({ navigation }) {
   const renderItem = ({ item }) => (
     <TouchableOpacity
       style={styles.productCard}
