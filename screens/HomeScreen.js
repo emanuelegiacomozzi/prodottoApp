@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, FlatList, TouchableOpacity } from 'react-native';
 
+
 const products = [
   { id: '1', name: 'Prodotto 1', price: '€19.99' },
   { id: '2', name: 'Prodotto 2', price: '€29.99' },
